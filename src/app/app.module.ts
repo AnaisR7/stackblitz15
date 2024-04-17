@@ -4,6 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { ODataServiceFactory } from "@awdorrin/ngx-odata-client/projects/ngx-odata-client/src/lib/odata-service-factory";
+import { ODataConfiguration } from "@awdorrin/ngx-odata-client/projects/ngx-odata-client/src/lib/odata-configuration";
+import { ODataConfigService } from './odata-config.service';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -12,7 +16,10 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    ODataServiceFactory,
+   { provide: ODataConfiguration, useClass: ODataConfigService },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
