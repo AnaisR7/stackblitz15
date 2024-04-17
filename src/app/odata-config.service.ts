@@ -1,5 +1,5 @@
 import { Injectable, Inject } from '@angular/core';
-import { ODataConfiguration } from "@awdorrin/ngx-odata-client/projects/ngx-odata-client/src/lib/odata-configuration";
+import { ODataConfiguration } from "@awdorrin/ngx-odata-client";
 
 @Injectable({
   providedIn: 'root'

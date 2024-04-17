@@ -4,8 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { ODataServiceFactory } from "@awdorrin/ngx-odata-client/projects/ngx-odata-client/src/lib/odata-service-factory";
-import { ODataConfiguration } from "@awdorrin/ngx-odata-client/projects/ngx-odata-client/src/lib/odata-configuration";
+import { ODataServiceFactory } from "@awdorrin/ngx-odata-client";
+import { ODataConfiguration } from "@awdorrin/ngx-odata-client";
 import { ODataConfigurationFactory } from './odata-configuration.factory';
 import { ODataConfigService } from './odata-config.service';
 

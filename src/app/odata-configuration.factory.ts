@@ -1,6 +1,6 @@
 import { FactoryProvider } from '@angular/core';
 import { HttpHeaders } from '@angular/common/http';
-import { ODataConfiguration } from '@awdorrin/ngx-odata-client/projects/ngx-odata-client/src/lib/odata-configuration';
+import { ODataConfiguration } from '@awdorrin/ngx-odata-client';
 
 export class ODataConfigurationFactory {
 
