@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 
 import { ODataServiceFactory } from "@awdorrin/ngx-odata-client/projects/ngx-odata-client/src/lib/odata-service-factory";
 import { ODataConfiguration } from "@awdorrin/ngx-odata-client/projects/ngx-odata-client/src/lib/odata-configuration";
+import { ODataConfigurationFactory } from './odata-configuration.factory';
 import { ODataConfigService } from './odata-config.service';
 
 @NgModule({
@@ -19,6 +20,7 @@ import { ODataConfigService } from './odata-config.service';
   providers: [
     ODataServiceFactory,
    { provide: ODataConfiguration, useClass: ODataConfigService },
+  //  { provide: ODataConfiguration, useClass: ODataConfigurationFactory },
   ],
   bootstrap: [AppComponent]
 })
